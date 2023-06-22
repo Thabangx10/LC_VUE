@@ -80,7 +80,7 @@
 
         <!-- Click Events -->
         <button v-on:click="Age++">Increase My Age!</button><br>
-        <button v-on:click="changeContent">Click Me!</button><br>
+        <button @click="changeContent">Click Me!</button><br>
 
         <!-- TOGGLE -->
         <div v-if="details">
@@ -90,13 +90,13 @@
                 {{Age}} 
             </p>
         </div>
-        <button v-on:click="showfirstname">
-        <span v-if="details">
-            Hide
-        </span>
-        <span v-if="!details">
-            Show
-        </span>
+        <button v-on:click="changeTitle">
+            <span v-if="details">
+                Hide
+            </span>
+            <span v-else>
+                Show
+            </span>
     </button>
     </div>
     </section><br><br>
